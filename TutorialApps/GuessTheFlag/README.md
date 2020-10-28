@@ -1,7 +1,7 @@
 # Guess-The-Flag App
 Example app for SwiftUI
 
-This is a simple app where you guess appropriate country for a given flag.
+This is a simple app where you guess the appropriate country for a given flag.
 
 It is a very basic app that demonstrates: 
 

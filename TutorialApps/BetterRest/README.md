@@ -3,7 +3,7 @@ Example app for SwiftUI & CoreML
 
 This is a simple app that calculates an optimal bedtime based on the time you want to wake up, how many hours you want to sleep, and how many coffees you've drunk over the day. 
 
-The tutorial shows how to train a CoreML model with Create ML and using the model in SwiftUI. 
+The tutorial shows how to train a CoreML model with Create ML,  and then using the model in SwiftUI. 
 
 It also demonstrates how to work with dates. 
 

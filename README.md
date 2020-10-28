@@ -39,4 +39,6 @@ I also followed some of the free tutorials on <a href="https://www.raywenderlich
 
 I've also learned from random places on the internet or YouTube, and I will try to give proper attribution. If I miss any, please let me know and I'll update accordingly. 
 
-### Note: SwiftUI 2 and XCode 12 were released recently, completely doing away with delegates. I am in the process of updating or re-implementing all the tutorials I have done with a clear description of what was covered, and I will post them to GitHub when done. I'm not backporting any SwiftUI 2 features yet, though that is something I might do once everything is posted. 
+### Note: 
+
+SwiftUI 2 and XCode 12 were released recently, completely doing away with delegates. I am in the process of updating or re-implementing all the tutorials I have done in Xcode 12 along with a clear description of what was covered, and I will post them to GitHub when done. I'm not backporting any SwiftUI 2 features yet, though that is something I might do once everything is posted. 
