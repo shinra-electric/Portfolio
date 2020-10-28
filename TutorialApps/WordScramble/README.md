@@ -1,7 +1,7 @@
 # WordScramble App
-Example app for SwiftUI & CoreML
+Example app for SwiftUI
 
-This is a simple app game that shows a random 8-letter word, and the user tries to make new words out of the letters given. 
+This is a simple game that shows a random 8-letter word, and the user tries to make new words out of the letters given. 
 
 It also introduces: 
 
