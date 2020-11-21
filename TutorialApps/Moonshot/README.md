@@ -5,7 +5,7 @@ This is a simple app that provides information about the NASA Apollo missions an
 
 It also introduces: 
 
-* Resizing images using GeopetryReader
+* Resizing images using GeometryReader
 * ScrollView
 * NavigationLink
 * Working with Codable data
