@@ -1,5 +1,4 @@
-# SwiftUI
-### A bit about me
+# A Bit About Me
 
 I am a recent Computer Science graduate, having obtained a Postgraduate Diploma with first-class honours from Griffith College Dublin in 2019.
 
