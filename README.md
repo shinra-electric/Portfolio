@@ -2,7 +2,7 @@
 
 I am a recent Computer Science graduate, having obtained a Postgraduate Diploma with first-class honours from Griffith College Dublin in 2019.
 
-I am older than most typical graduates. This was my third time in university, and I have already had a successful career in International Private Medical Insurance. I have also been based in China, Japan, Singapore and Hong Kong for the last 15 years. I speak Mandarin well, and I'm fairly competent in Japanese.
+This was my third time in university, and I have previously had a successful career in International Private Medical Insurance. I have also been based in China, Japan, Singapore and Hong Kong for the last 15 years. I speak Mandarin well, and I'm fairly competent in Japanese.
 
 After a lengthy career in IPMI, I had decided to go back to university in order to pursue a new career doing something I was actually excited about.
 
