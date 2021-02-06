@@ -12,6 +12,7 @@ Some of the topics or tools used included:
 The instructor provided static images of a sample webpage, and we were tasked to re-create the product and checkout pages. 
 
 Provided images: 
+
 ![](ProvidedImage1.jpg)
 ![](ProvidedImage2.jpg)
 
