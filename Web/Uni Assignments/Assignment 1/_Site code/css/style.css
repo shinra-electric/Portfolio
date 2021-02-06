@@ -1,0 +1,345 @@
+
+/*INITIAL DEFAULT STYLINGS FOR ALL ELEMENTS*/
+
+/*Set the box sizing for the border-box (Not exactly sure how this works)*/
+*{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	/*Remove text decoration (which wasn't applied by the reset for some reason)*/
+	text-decoration: none;
+}
+
+/*Set default stylings for all headings*/
+* h1, h2, h3, h4, h5{
+	font-family: "georgia", serif;
+}
+
+/*Set default stylings for most of the text*/
+body{
+	font-family: "Helvetica Neue", Helvetica, sans-serif;
+	line-height: 1.5em;
+	font-size: 14px;
+	color: gray;
+
+
+}
+
+/*The main wrapper. Can align the whole page using this.*/
+#main-wrapper{
+	/*Set the width of the page*/
+	width: 1000px;
+	/*the width of the sides are auto*/
+	margin-right: auto;
+	margin-left: auto;
+}
+/*END OF DEFAULT STYLINGS*/
+
+
+/*START OF HEADER*/
+
+/*Artisan flower arrangements you will love*/
+header p{
+	font-style: italic;
+	text-transform: uppercase;
+	font-size: smaller;
+
+}
+
+/*Nav bar at the top right*/
+.top{
+	background: #A0c33F;
+	height: 35px;
+	padding-top: 6px;
+}
+
+.top ul li{
+	float: right;
+}
+.top ul li a{
+	text-transform: capitalize;
+	padding: 15px 15px 15px 15px;
+	color: white;
+}
+
+/*Underline on hover*/
+.top ul li a:hover{
+	text-decoration: underline;
+}
+
+/*This is to grey out a visited link in the top, but it looks bad so I removed it*/
+/*.top ul li a:visited{*/
+	/*color: lightgray;*/
+/*}*/
+
+/*Underline on hover*/
+.contact ul li a:hover{
+	text-decoration: underline;
+}
+
+/*Contact details*/
+.contact ul li{
+	float: right;
+	list-style: none;
+}
+.contact ul li a{
+	padding: 15px 15px 15px 15px;
+	color: gray;
+}
+
+/*This is the bottom navigation bar in the header*/
+.bottom ul li{
+	float: left;
+}
+
+.bottom ul li a{
+	display: block;
+	padding: 8px 17px;
+	color: #A0c33F;
+	text-transform: uppercase;
+
+}
+/*Invert colours on hover*/
+.bottom ul li a:hover{
+	background: #A0c33F;
+	color: white;
+}
+
+/*Some styling after the end. Moves the "checkout" text down*/
+.bottom:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+/*END OF HEADER*/
+
+
+
+/*MAIN BODY OF PRODUCT PAGE*/
+
+/*A bit of padding for the main body at the top and bottom*/
+.main-body{
+	padding: 40px 0px;
+}
+
+/*This is for the image in the main content section*/
+.main-content img{
+	padding: 40px 0px 40px 20px;
+	height: 450px;
+}
+
+/*This is for the main text body on the right*/
+.main-text{
+	padding: 40px 0px 40px 20px;
+	float: right;
+	width: 53%;
+	font-size: 1.1em;
+}
+
+/*Style for the "Vibrant lily basket" text*/
+.main-text h1{
+	font-size: 2em;
+	color: #A0c33F;
+	text-transform: capitalize;
+	font-weight: bold;
+}
+
+/*Style for the "Delivery or pickup" text*/
+.main-text h4{
+	font-weight: bold;
+	font-size: 1.3em;
+	padding: .3em 0em;
+}
+
+
+/*Draw a line in the main text on the right*/
+.main-line{
+	height: 1.5em;
+	border-bottom: .2em solid grey;
+
+}
+
+/*Styling for the input/button on the product page form*/
+.main-text input{
+	float: right;
+	background: #A0c33F;
+	color: white;
+	padding: 1em 2em;
+	font-size: 1em;
+	border: 1px solid;
+}
+
+
+/*On button press*/
+input[type="submit"]:active{
+	border-color: grey;
+	border: 2px solid;
+}
+
+
+/*This is for the "You may also like" section at the bottom of the main section.*/
+.also-like h2{
+	color: #A0c33F;
+	font-size: 1.5em;
+	font-weight: bold;
+	padding-bottom: 0.5em;
+}
+
+/*Thumbnail images*/
+.thumbnail img{
+	height: 230px;
+	width: 230px;
+	margin-top: 1em;
+	margin-bottom: 1em;
+
+}
+
+/*Thumbnail text*/
+.thumbnail p{
+	float: left;
+	font-size: 1.5em;
+	font-family: initial;
+	font-weight: bold;
+	margin: 5px;
+	padding: .6em 0em 0em 0.2em;
+	border-width: 2px;
+	border-style: solid;
+	border-color: #a0c33f;
+}
+
+.thumbnail a{
+	color: grey;
+}
+
+
+
+/*Don't change the colour after it has been visited*/
+.thumbnail a:visited{
+color: inherit;
+}
+
+/*END OF PRODUCT PAGE MAIN BODY*/
+
+
+
+
+/*CHECKOUT PAGE*/
+
+
+/*Styling for the form on the checkout page*/
+/*Re-set the fieldset style*/
+#form-wrap fieldset{
+	padding: 0.5em;
+	border: 1px solid;
+	border-color: #A0c33F;
+	margin: 1em;
+
+}
+
+/*H2 styles*/
+#form-wrap h2{
+	font-size: 2em;
+	color: #A0c33F;
+	font-weight: bold;
+	padding: .2em 0em 0em .2em;
+
+}
+
+/*H3 styles*/
+#form-wrap h3{
+	font-size: 1.2em;
+	font-weight: bold;
+	padding-bottom: .5em;
+}
+
+
+/*Forms type styling*/
+.forms{
+	font-size: medium;
+}
+
+/*Display the forms in a grid pattern*/
+.input-group{
+	display: grid;
+	grid-template-columns: 30% 40%;
+	grid-gap: .4em;
+}
+
+
+/*Styling for the forms legend*/
+.forms legend{
+	color: #A0c33F;
+	font-size: 1.2em;
+	font-family: "georgia", sans-serif;
+	font-weight: bold;
+}
+
+/*Styling for the form text-boxes*/
+.forms input{
+	border-color: #A0c33F;
+	border-style: double;
+	width: 50%;
+}
+
+/*Styling for the form TextArea boxes*/
+.forms textarea{
+	border-color: #A0c33F;
+	border-style: double;
+}
+
+/*Styling for the Example text above the TextArea Message box*/
+.forms p{
+	font-style: italic;
+	font-size: .7em;
+}
+
+/*Spacing for the radio buttons*/
+input[type="radio"]{
+	padding: 10px;
+	margin: 10px;
+	width: auto;
+}
+
+/*Display style for the radio buttons (to get them to align correctly)*/
+#radio{
+	display: grid;
+}
+
+/*Extra details for the button checkout page*/
+input#checkout-button[type="submit"]{
+	float: right;
+	background: #A0c33F;
+	color: white;
+	padding: 1em 2em;
+	font-size: 1em;
+	margin-right: 1em;
+	width: 20%;
+
+}
+/*END OF CHECKOUT PAGE MAIN BODY*/
+
+
+
+/*START OF FOOTER */
+footer{
+	clear: both;
+	background: white;
+	padding: 20px;
+	text-align: right;
+}
+
+/*Fix the size of the twitter icon*/
+footer small img{
+	width: 20px;
+}
+
+/*Style the twitter handle*/
+footer small a{
+	color: grey;
+	font-size: 1.2em;
+}
+
+/*END OF FOOTER*/
+
+

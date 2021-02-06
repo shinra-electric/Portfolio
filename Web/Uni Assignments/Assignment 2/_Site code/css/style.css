@@ -1,0 +1,190 @@
+
+/*Set max width and align centre*/
+#main-wrapper{
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1000px;
+}
+
+
+/*Set Google fonts for headers and paragraphs*/
+#main-wrapper h1, h2, h3, h4, h5, h6 {
+  font-family: 'Sawarabi Mincho', sans-serif
+}
+
+#main-wrapper p {
+  font-family: 'M PLUS 1p', sans-serif;
+}
+
+
+
+
+
+/*Set media query for all screens smaller than 575  -- XS --   */
+@media  (max-width: 575px) {
+
+#main-wrapper {
+
+  max-width: 500px;
+}
+
+  #logo-column img{
+    overflow: auto;
+    max-width: none;
+  }
+
+#logo-column {
+  column-width: fill-available;
+}
+
+#search-column {
+  column-width: fill-available;
+}
+
+.container-fluid {
+  column-width: fill-available;
+}
+
+
+  .navbar-link ul li a{
+
+  }
+
+
+
+#logo {
+  width:60%
+}
+
+
+
+} /*End of XS*/
+
+
+/*------------------------------------------------------------------------------------------------------------------*/
+
+
+/*Set media query for all screens between 576px and 767px  --- SM ---  */
+@media (max-width: 767px) and (min-width: 576px) {
+
+  #main-wrapper {
+
+    max-width: 700px;
+    overflow: auto
+  }
+
+  .navbar-nav {
+    flex-direction: unset;
+
+  }
+
+#search-bar {
+  padding-left: 5em
+}
+
+
+  #logo {
+    width:90%
+  }
+
+
+  #main-row {
+
+  }
+
+} /*END OF SM*/
+
+
+/*------------------------------------------------------------------------------------------------------------------*/
+
+
+/*Set media query for all screens larger than 768px. 1000px is the max-width.  --- MD --  */
+@media  (min-width: 768px) {
+
+  #main-wrapper {
+
+  }
+
+  .navbar {
+    justify-content: flex-end;
+
+  }
+
+  .navbar-nav {
+
+    flex-direction: unset;
+    padding-right: unset;
+    padding-left: unset;
+  }
+
+  .navbar-link ul li a{
+
+  }
+
+  #search-bar {
+    padding-left: 5em
+  }
+
+
+  #logo img{
+    width: 100px;
+    height: 60px;
+  }
+
+
+
+} /*END OF MD*/
+
+
+/*------------------------------------------------------------------------------------------------------------------*/
+
+/*HEADER*/
+
+#subtitle {
+  font-size: .8em;
+}
+
+
+
+
+
+.container-fluid {
+  padding-right: 0px;
+  padding-left: 0px;
+  margin-right: auto;
+  margin-left: auto;
+
+}
+
+
+/*C*/
+
+#features img {
+  height: 250px;
+  margin: auto;
+  display: block;
+}
+
+.img-thumbnail {
+  /*height: 200px;*/
+  padding: unset;
+  overflow: hidden;
+
+  width: 100%;
+  height: 15em;
+  object-fit: cover;
+}
+
+
+/*Draw a line in the filter section*/
+.main-line{
+  height: 1em;
+  border-bottom: .1em solid lightgrey;
+
+}
+
+.card-body {
+  /*width: 90%;*/
+
+}
+

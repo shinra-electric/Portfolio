@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--This is the head which sets the title and the CSS sheet.
+I'm using reset.css to set all presentation variables to zero so everything starts off the same in all browsers.-->
+<head>
+    <meta charset="UTF-8">
+    <title>Mill Flowers - Checkout</title>
+    <link rel="stylesheet" href="css/reset.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+<body>
+<!--Using a main wrapper div to enclose everything, so it can be laid out easier-->
+<div id="main-wrapper">
+    <header>
+        <!--The top navigation bar-->
+        <div class="navbar">
+            <nav class="top">
+                <ul>
+                    <li><a href="checkout.html">checkout</a></li>
+                    <li><a href="#">basket</a></li>
+                    <li><a href="#">my account</a></li>
+                </ul>
+            </nav>
+        </div>
+        <!--The contact items-->
+        <div class="contact">
+            <ul>
+                <!--Used emoji rather than icons. They will display differently on different platforms, but they are Unicode so are supported in most places-->
+                <!--Should use icons for consistency's sake, but didn't really have time to hunt down icons from the web and edit-->
+                <li><a href="mailto:info@millflowers.ie">✉️ info@millflowers.ie</a> </li>
+                <li><a href="tel:+353(0)614486165">📱+353 (0)61 4486165</a></li>
+            </ul>
+        </div>
+
+        <!--The logo-->
+        <h1><a href="product.html" title="logo" ><img src="images/logo3.png" alt="Logo" title="Logo" height="57" width="277"/></a></h1>
+
+        <!--The subtitle-->
+        <p>Artisan flower arrangements you will love</p>
+
+        <!--The lower navigation buttons-->
+        <nav class="bottom">
+            <ul >
+                <!--Padding used on the left here to get the first item shifted to the edge. Could have done this in CSS, but quicker to put it in here rather than div it.-->
+                <li><a href="product.html" style="padding-left: 0px;">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="product.html">Buy Online</a> </li>
+                <li><a href="#">Weddings</a> </li>
+                <li><a href="#">Contact Us</a> </li>
+            </ul>
+        </nav>
+
+    </header>
+    <!--End header-->
+
+
+    <!--main wrap the whole form-->
+    <main id="form-wrap">
+
+            <h2>Checkout</h2>
+
+            <!--The form has two fieldsets-->
+            <form class="forms" action="checkout.php" method="post">
+
+                <!--Fieldset 1-->
+                <fieldset>
+                    <legend>Delivery Information</legend>
+
+                    <!--Create a div to format the form elements in a grid pattern-->
+                    <div class="input-group">
+
+                    <label for="delivery-date">Delivery Date</label>
+                    <input type="date" name="Delivery date" id="delivery-date" required="required">
+
+                    <label for="delivery-ins">Special Delivery Instructions</label>
+                    <textarea rows="5" cols="40" name="Special Delievery Instructions" id="delivery-ins"></textarea>
+
+                    <label for="rec-firstname">Recipient Firstname</label>
+                    <input name="Recipient Firstname" type="text" id="rec-firstname" required="required">
+
+                    <label for="rec-surname">Recipient Surname</label>
+                    <input name="Recipient Surname" type="text" id="rec-surname" required="required">
+
+                    <label for="add1">Address 1</label>
+                    <input name="Address 1" type="text" id="add1" required="required">
+
+                    <label for="add2">Address 2</label>
+                    <input name="Address 2" type="text" id="add2" required="required">
+
+                    <label for="add3">Address 3</label>
+                    <input name="Address 3" type="text" id="add3">
+
+                    <label for="city">Town/City</label>
+                    <input name="Town/City" type="text" id="city" required="required">
+
+                    <label for="country">Country</label>
+                    <input name="Country" type="text" id="country" required="required">
+
+                    <label for="eircode">Eircode</label>
+                    <input name="Eircode" type="text" id="eircode" required="required">
+
+                    <label for="message">Card Message</label>
+                        <p>For example: Happy Birthday, Have a fabulous day love Kevin</p>
+                        <p></p>
+                        <textarea rows="5" cols="40" name="Card Message" id="message"></textarea>
+
+                    </div>
+                </fieldset>
+
+                <!--Fieldset 2-->
+                <fieldset>
+                    <legend>Payment Information</legend>
+                    <h3>Credit Card</h3>
+                    <div class="input-group">
+
+                    <label for="cc-name">Name on Card</label>
+                    <input name="Name on credit card" type="text" id="cc-name" required="required">
+
+                    <label for="visa">Credit Card Type</label>
+
+                        <!--Radio buttons for the credit card type. I had trouble with the alignment, but it seems to work ok.-->
+                        <div id="radio">
+                    <label><input type="radio" name="visa" value="visa" id="visa">Visa</label>
+                    <label><input type="radio" name="mastercard" value="mastercard" id="mastercard">MasterCard</label>
+                         </div>
+
+                    <label for="cc-number">Card Number</label>
+                    <input name="Card Number" type="text" id="cc-number" required="required">
+
+                        <!--The "Month" type is not supported on Firefox or Safari, so I have created a custom drop-down instead.-->
+                        <!--I had a bit of trouble with the alignment for these-->
+                    <label for="cc-exp-month">Expiry</label>
+                        <div id="expdate">
+                        <select name="Credit Card Expiration Month" id="cc-exp-month">
+                            <option value="01" selected="selected">01 - January</option>
+                            <option value="02">02 - February</option>
+                            <option value="03">03 - March</option>
+                            <option value="04">04 - April</option>
+                            <option value="05">05 - May</option>
+                            <option value="06">06 - June</option>
+                            <option value="07">07 - July</option>
+                            <option value="08">08 - August</option>
+                            <option value="09">09 - September</option>
+                            <option value="10">10 - October</option>
+                            <option value="11">11 - November</option>
+                            <option value="12">12 - December</option>
+                        </select>
+
+                        <select name="Credit Card Expiration Year" id="cc-exp-year">
+                            <option value="19" selected="selected">2019</option>
+                            <option value="=20">2020</option>
+                            <option value="=21">2021</option>
+                            <option value="=22">2022</option>
+                            <option value="=23">2023</option>
+                            <option value="=24">2024</option>
+                            <option value="=25">2025</option>
+                            <option value="=26">2026</option>
+                            <option value="=27">2027</option>
+                            <option value="=28">2028</option>
+                            <option value="=29">2029</option>
+                            <option value="=30">2030</option>
+                        </select>
+                        </div>
+
+                    <label for="cvv">Card Verification Number</label>
+                    <input name="Verification Number" type="text" id="cvv" required="required">
+
+                    <label for="email">Email</label>
+                    <input name="Email" type="email" id="email" required="required">
+
+                    <label for="tel">Phone</label>
+                    <input name="Phone" type="tel" id="tel" required="required">
+
+                    </div>
+                </fieldset>
+
+                 <input value="Place Order" name="Place Order" id="checkout-button" type="submit">
+            </form>
+            <!--End of the form-->
+
+    </main>
+
+    <footer>
+        <small>
+            <!--insert Twitter icon-->
+            <img src="images/Twitter3.png" alt="Twitter Logo"/>
+            <!--Twitter link-->
+            <a href="https://twitter.com/intent/tweet?screen_name=millflowers&ref_src=twsrc%5Etfw" class="twitter-mention-button" data-show-count="false">@millflowers</a>
+        </small>
+    </footer>
+
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mill Flowers - Buy Online</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--Reset-->
+    <link rel="stylesheet" href="css/reset.css" type="text/css">
+
+    <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+
+    <!--Need jquery for the hamburger menu-->
+    <script src="js/jquery-3.4.0.min.js"></script>
+    <script src="js/bootstrap.bundle.js"></script>
+
+
+    <!--Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=M+PLUS+1p|Sawarabi+Mincho" rel="stylesheet">
+
+
+</head>
+
+<body>
+<!--Media queries with bootstrap. Check out the CSS page fo details on styling-->
+<!--XS or no specification refers to screens smaller than 575 -->
+<!--SM or no specification refers to screens between 576px and 767px -->
+<!--MD or no specification refers to screens larger than 768px. 1000px is the max-width. -->
+
+<!-- Note I have only learned about Aria classes for accessibility recently. I have implemented in some parts but not everywhere. -->
+
+<div id="main-wrapper"><!--Use this to align the whole page. Set width in CSS-->
+
+    <header>
+        <!--The top navigation bar-->
+        <!--bg-primary = Set the background colour  -->
+        <!--justify-content-end  = Justify to the right side -->
+        <!--py-1    for padding-->
+
+        <nav class="navbar navbar-expand-sm navbar-dark bg-primary justify-content-end">
+            <ul class="navbar-nav">
+                <li><a class="nav-link small" href="#">My Account</a></li>
+                <li><a class="nav-link small" href="#">Basket</a></li>
+                <li><a class="nav-link small" href="#">Checkout</a></li>
+            </ul>
+        </nav>
+
+        <!--The contact items-->
+        <!--Container-fluid = provides a full width container-->
+        <div class="container-fluid" >
+            <div class="row no-gutters ">
+
+                <!--For XS the size is 12/12 columns. At SM size columns are 5/12-->
+                <div class="col-12 col-sm-5" >
+                    <!--The logo-->
+
+                    <h1><a href="#" title="logo"><img src="images/logo2orgb.png"  alt="Logo" id="logo"
+                                                      title="Logo"/></a></h1>
+                    <!--The subtitle-->
+                    <p class="font-italic text-nowrap" id="subtitle">ARTISAN FLOWER ARRANGEMENTS</p>
+
+                </div> <!--logo column-->
+
+
+                <!--Contact details and search bar-->
+                <div class="col-12 col-sm-7 ">
+
+                    <div class="row ">
+
+                        <div class="col-12 flex-nowrap custom-control-inline justify-content-sm-end justify-content-start" >
+                            <a class="nav-link small text-nowrap" href="tel:+353(0)614486165">+353 (0)61 4486165</a>
+                            <a class="nav-link small text-nowrap"
+                               href="mailto:info@millflowers.ie">info@millflowers.ie</a>
+                        </div> <!-- contact details-->
+
+                    </div>  <!--Contacts row-->
+
+
+                    <div class="row" >
+
+                        <!--Search bar -->
+
+                        <form class="col-12 flex-nowrap form-inline justify-content-end" id="search-bar" >
+                            <input class="form-control col-10 " type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success bg-primary text-white " type="submit">Search</button>
+
+                        </form>
+
+                    </div>  <!-- search row-->
+
+                </div> <!-- Contact & search column-->
+
+            </div> <!-- Main row-->
+        </div> <!--container-fluid-->
+
+
+        <br/>
+        <!--The lower navigation buttons-->
+        <nav class="navbar navbar-expand-sm navbar-light">
+            <a class="navbar-brand" href="#">Mill Flowers</a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-navbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="navbar-collapse collapse" id="main-navbar">
+                <ul class="navbar-nav mr-auto">
+
+                    <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="aboutus.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="category.html">Buy Online</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Weddings</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contact Us</a></li>
+                </ul>
+            </div>
+        </nav>
+
+
+    </header>
+    <!--End header-->
+
+
+    <main class="main-body">
+        <div class="row"> <!--Row to contain the columns-->
+
+            <!--full width at XS sizes, 25% at SM+ sizes. -->
+            <section class="col-12 col-sm-3"> <!--Filter column-->
+                <h3>Filter</h3>
+
+                <!--draw a dividing line using CSS-->
+                <div class="main-line"></div>
+
+                <form class="form-group">
+
+                    <br/>
+                    <h4>Flower</h4>
+
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="lily">
+                        <label class="form-check-label" for="lily">Lily</label>
+                    </div>
+
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="carnation">
+                        <label class="form-check-label" for="carnation">Carnation</label>
+                    </div>
+
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="chrysanthemum">
+                        <label class="form-check-label" for="chrysanthemum">Chrysanthemum</label>
+                    </div>
+
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="rose">
+                        <label class="form-check-label" for="rose">Rose</label>
+                    </div>
+
+                    <!--draw a line using CSS-->
+                    <div class="main-line"></div>
+
+                    <br/>
+                    <h4>Colour</h4>
+
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="pink">
+                        <label class="form-check-label" for="pink">Pink</label>
+                    </div>
+
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="orange">
+                        <label class="form-check-label" for="orange">Orange</label>
+                    </div>
+
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="purple">
+                        <label class="form-check-label" for="purple">Purple</label>
+                    </div>
+
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="white">
+                        <label class="form-check-label" for="white">White</label>
+                    </div>
+
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="red">
+                        <label class="form-check-label" for="red">Red</label>
+                    </div>
+
+                </form>
+            </section> <!--Filter column-->
+
+            <section class="col-12 col-sm-9"> <!--Cards column-->
+                <h1>Birthday flowers</h1>
+                <br/>
+
+                <!--This is the upper pagination. I have set it to be on page 2 like in the example photo. It does not work.-->
+                <nav>
+                    <ul class="pagination justify-content-center justify-content-sm-start">
+                        <li class="page-item">
+                            <span class="page-link">Previous</span>
+                        </li>
+                        <li class="page-item">
+                            <a class="page-link" href="#">1</a>
+                        </li>
+
+                        <li class="page-item active">
+                            <a class="page-link" href="#">2</a>
+                        </li>
+
+                        <li class="page-item">
+                            <a class="page-link" href="#">Next</a>
+                        </li>
+                    </ul>
+                </nav> <!--Upper pagination-->
+
+                <div class="row"> <!--Nested row for the product cards-->
+
+                        <!--MY is margin top & bottom (Legend at bottom of page)-->
+                    <div class="card col-12 col-sm-6 col-md-4 my-2" >
+                        <div class="card-body">
+                            <img class="card-img-top img-thumbnail" src="images/gift.png"/>
+                            <h5 class="card-title">Vibrant Vase</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">€39.99</h6>
+                            <br/>
+                            <a href="#" class="btn btn-primary">Buy</a>
+                            <a href="#" class="btn btn-primary">View</a>
+                        </div> <!--Card body-->
+                    </div>
+
+
+                    <div class="card col-12 col-sm-6 col-md-4 my-2">
+                        <div class="card-body">
+                            <img class="card-img-top img-thumbnail" src="images/tulips_square.png"/>
+                            <h5 class="card-title">Classic Tulips</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">€35.99</h6>
+                            <br/>
+                            <a href="#" class="btn btn-primary">Buy</a>
+                            <a href="#" class="btn btn-primary">View</a>
+                        </div> <!--Card body-->
+                    </div>
+
+                    <div class="card col-12 col-sm-6 col-md-4 my-2">
+                        <div class="card-body">
+                            <img class="card-img-top img-thumbnail" src="images/lilys_400_square.png"/>
+                            <!--Put a badge in here-->
+                            <h5 class="card-title">Lilys <span class="badge badge-secondary">New</span></h5>
+                            <h6 class="card-subtitle mb-2 text-muted">€35.99</h6>
+                            <br/>
+                            <a href="#" class="btn btn-primary">Buy</a>
+                            <a href="#" class="btn btn-primary">View</a>
+                        </div> <!--Card body-->
+                    </div>
+
+                    <div class="card col-12 col-sm-6 col-md-4 my-2">
+                        <div class="card-body">
+                            <img class="card-img-top img-thumbnail" src="images/wedding_square.jpg"/>
+                            <h5 class="card-title">Small bouquet</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">€29.99</h6>
+                            <br/>
+                            <a href="#" class="btn btn-primary">Buy</a>
+                            <a href="#" class="btn btn-primary">View</a>
+                        </div> <!--Card body-->
+                    </div>
+
+
+                </div> <!--Nested row-->
+
+
+                <!--This is the lower pagination. I have set it to be on page 2 like in the example photo. It does not work.-->
+                <nav>
+                    <ul class="pagination justify-content-center justify-content-sm-start my-4">
+                        <li class="page-item">
+                            <span class="page-link">Previous</span>
+                        </li>
+                        <li class="page-item">
+                            <a class="page-link" href="#">1</a>
+                        </li>
+
+                        <li class="page-item active">
+                            <a class="page-link" href="#">2</a>
+                        </li>
+
+                        <li class="page-item">
+                            <a class="page-link" href="#">Next</a>
+                        </li>
+                    </ul>
+                </nav> <!--Pagination-->
+
+
+            </section> <!--Cards column-->
+
+        </div> <!--Main row-->
+
+
+    </main>
+</div>
+</body>
+</html>
+
+
+<!--
+m - for classes that set margin
+p - for classes that set padding
+
+Where sides is one of:
+
+t - for classes that set margin-top or padding-top
+b - for classes that set margin-bottom or padding-bottom
+l - for classes that set margin-left or padding-left
+r - for classes that set margin-right or padding-right
+x - for classes that set both *-left and *-right
+y - for classes that set both *-top and *-bottom
+blank - for classes that set a margin or padding on all 4 sides of the element -->

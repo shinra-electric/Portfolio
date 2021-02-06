@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--This is the head which sets the title and the CSS sheet.
+I'm using reset.css to set all presentation variables to zero so everything starts off the same in all browsers.-->
+<head>
+    <meta charset="UTF-8">
+    <title>Mill Flowers - Product Page</title>
+    <link rel="stylesheet" href="css/reset.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+<body>
+<!--Using a main wrapper div to enclose everything, so it can be laid out easier-->
+<div id="main-wrapper">
+    <header>
+        <!--The top navigation bar-->
+        <div class="navbar">
+            <nav class="top">
+                <ul>
+                    <li><a href="checkout.html">checkout</a></li>
+                    <li><a href="#">basket</a></li>
+                    <li><a href="#">my account</a></li>
+                </ul>
+            </nav>
+        </div>
+        <!--The contact items-->
+        <div class="contact">
+            <ul>
+                <!--Used emoji rather than icons. They will display differently on different platforms, but they are Unicode so are supported in most places-->
+                <!--Should use icons for consistency's sake, but didn't really have time to hunt down icons from the web and edit-->
+                <li><a href="mailto:info@millflowers.ie">✉️ info@millflowers.ie</a> </li>
+                <li><a href="tel:+353(0)614486165">📱+353 (0)61 4486165</a></li>
+            </ul>
+        </div>
+
+        <!--The logo-->
+        <h1><a href="product.html" title="logo" ><img src="images/logo3.png" alt="Logo" title="Logo" height="57" width="277"/></a></h1>
+
+        <!--The subtitle-->
+        <p>Artisan flower arrangements you will love</p>
+
+        <!--The lower navigation buttons-->
+        <nav class="bottom">
+            <ul >
+                <!--Padding used on the left here to get the first item shifted to the edge. Could have done this in CSS, but quicker to put it in here rather than div it.-->
+                <li><a href="product.html" style="padding-left: 0px;">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="product.html">Buy Online</a> </li>
+                <li><a href="#">Weddings</a> </li>
+                <li><a href="#">Contact Us</a> </li>
+            </ul>
+        </nav>
+
+    </header>
+    <!--End header-->
+
+
+    <main class="main-body">
+        <!--Main body with two sections. First for displaying the main option. Second for showing additional options-->
+
+        <section class="main-content">
+            <!--Image on the left-->
+            <!--Reformatted as jpeg with reduced file size for quicker loading. No visible drop in quality-->
+            <img src="images/orangelily1.jpg" alt="Orange Lillies" title="Lovely orange lillies"/>
+
+            <!--Text and form on the right. Give them the Main-Text tag so can format easier-->
+            <div class="main-text">
+                <h1>vibrant lily basket</h1>
+                <br/>
+                <p>Vibrant orange asiatic lilies in a wicker basket</p>
+                <br/>
+                <p>These flowers are naturally complemented by the deep green shades of oregonia and nestled in a reusable rustic
+                    wicker basket - sure to add an inviting touch to any space!</p>
+                <br/>
+                <p>Price: €49.99</p>
+                <!--Add a line-->
+                <div class="main-line"></div>
+
+
+                <h4>Choose delivery or pickup</h4>
+                <!--Form for the "Delivery/Post" option-->
+                <form id="forms" action="checkout.php" method="post">
+                    <label for="order-type">Order Type</label>
+                    <select name="order-type" id="order-type">
+                        <option value="Delivery" selected="selected">Delivery</option>
+                        <option value="Pickup">Pickup</option>
+                    </select>
+                    <br>
+                    <input type="submit" name="Order Now" value="Order Now">
+                </form>
+            </div>
+
+        </section>
+
+
+        <!--This is the second section with the thumbnails of other products. They should swap with the main display, but that is out of scope the assignment-->
+        <section class="also-like">
+
+            <h2>You may also like</h2>
+            <!--I've just linked to the main page...-->
+            <!--Reformatted all images as jpeg with reduced file size for quicker loading. No visible drop in quality-->
+            <div class="thumbnail">
+                <a href="#" title="White Bouquet"><p>White bouquet<br><img src="images/whitebouquet1.jpg" alt="White Bouquet" title="A lovely white bouquet"/></p></a>
+                <a href="#" title="Orange Bouquet"><p>Orange bouquet<br><img src="images/orange1.jpg" alt="Orange Bouquet" title="A lovely orange bouquet"/></p></a>
+                <a href="#" title="Tulip Bouquet"><p>Tulip bouquet<br><img src="images/tulips1.jpg" alt="Tulip Bouquet" title="A lovely tulip bouquet"/></p></a>
+                <a href="#" title="Small Bouquet"><p>Small bouquet<br><img src="images/smallbouquet1.jpg" alt="Small Bouquet" title="A small lovely bouquet"/></p></a>
+            </div>
+
+        </section>
+    </main>
+    <!--End main body-->
+
+    <footer>
+        <small>
+            <!--insert Twitter icon-->
+            <img src="images/Twitter3.png" alt="Twitter Logo"/>
+            <!--Twitter link-->
+            <a href="https://twitter.com/intent/tweet?screen_name=millflowers&ref_src=twsrc%5Etfw" class="twitter-mention-button" data-show-count="false">@millflowers</a>
+    </small>
+</footer>
+
+
+</div>
+
+</body>
+</html>
