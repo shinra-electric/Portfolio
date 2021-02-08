@@ -12,7 +12,7 @@ Some of the topics or tools used included:
 
 As before, the instructor provided static images of a sample webpage, and we were tasked to re-create the about, category and home pages. The pages should also have a responsive design, and automatically resize and change layout when viewed on a mobile. 
 
-Provided images: 
+### Provided images: 
 
 ![](ProvidedHomeLarge.jpg)
 ![](ProvidedAboutUsLarge.jpg)
@@ -20,7 +20,7 @@ Provided images:
 ![](ProvidedCategoryLarge.jpg)
 ![](ProvidedCategoryMobile.jpg)
 
-My submission: 
+### My submission: 
 ![](SubmittedHomeLarge.jpg)
 ![](SubmittedHomeMobile.jpg)
 ![](SubmittedAboutUsLarge.jpg)

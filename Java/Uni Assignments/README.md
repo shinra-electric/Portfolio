@@ -6,7 +6,15 @@ I'm posting some of the assignments I was given in university here to not only t
 
 I've posted the following so far: 
 
+* Binary Search
+* Linear Search
+* Self-Organising Search 
+
+* Bubble Sort
+* Insertion Sort
 * Quicksort
+* Selection Sort
+
 * (...more to come).
 
 (I may also re-implement some of these in Swift...). 

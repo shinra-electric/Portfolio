@@ -11,11 +11,11 @@ Some of the topics or tools used included:
 
 The instructor provided static images of a sample webpage, and we were tasked to re-create the product and checkout pages. 
 
-Provided images: 
+### Provided images: 
 
 ![](ProvidedImage1.jpg)
 ![](ProvidedImage2.jpg)
 
-My submission: 
+### My submission: 
 ![](Submitted1.jpg)
 ![](Submitted2.jpg)
