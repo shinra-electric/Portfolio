@@ -8,7 +8,6 @@ Some of the topics or tools used included:
 * CSS 3
 * Bootstrap
 * Responsive design
-* PHPStorm
 
 As before, the instructor provided static images of a sample webpage, and we were tasked to re-create the about, category and home pages. The pages should also have a responsive design, and automatically resize and change layout when viewed on a mobile. 
 

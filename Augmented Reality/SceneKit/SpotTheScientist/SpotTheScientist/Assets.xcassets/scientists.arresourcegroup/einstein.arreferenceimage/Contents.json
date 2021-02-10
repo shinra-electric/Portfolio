@@ -1,0 +1,16 @@
+{
+  "images" : [
+    {
+      "filename" : "einstein.jpg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  },
+  "properties" : {
+    "unit" : "centimeters",
+    "width" : 5.9459399999999993
+  }
+}

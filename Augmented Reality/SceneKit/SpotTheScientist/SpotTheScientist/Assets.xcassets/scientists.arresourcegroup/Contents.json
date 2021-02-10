@@ -1,0 +1,35 @@
+{
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  },
+  "resources" : [
+    {
+      "filename" : "anning.arreferenceimage"
+    },
+    {
+      "filename" : "curie.arreferenceimage"
+    },
+    {
+      "filename" : "darwin.arreferenceimage"
+    },
+    {
+      "filename" : "einstein.arreferenceimage"
+    },
+    {
+      "filename" : "galileo.arreferenceimage"
+    },
+    {
+      "filename" : "lovelace.arreferenceimage"
+    },
+    {
+      "filename" : "newton.arreferenceimage"
+    },
+    {
+      "filename" : "pasteur.arreferenceimage"
+    },
+    {
+      "filename" : "tesla.arreferenceimage"
+    }
+  ]
+}
