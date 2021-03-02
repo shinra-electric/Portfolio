@@ -10,21 +10,38 @@ Even though the CS course I did was very useful, it did not touch app developmen
 
 ### What's the point of this repository? 
 
-Getting a first job as an iOS developer is extremely challenging, as every company (that I've seen) requires new hires to have a minimum of 2~3 years experience. Even fresh graduates are expected to have some form of work experience.
+Getting a first job as a developer is extremely challenging, as every company (that I've seen) requires new hires to have a minimum of 2~3 years experience. Even fresh graduates are expected to have some form of work experience.
 
 (The coronavirus pandemic has also not helped the situation much, with a lot of companies putting freezes on new hires).
 
-So this repository is kind of a practice portfolio where I will be posting SwiftUI example code and the end result of various tutorials that I've been following. 
+So this repository is kind of a practice portfolio where I will be posting example code and the end result of various tutorials that I've been following. 
 
-The hope is that I can share this link and it will demonstrate my understanding of Xcode, Swift, SwiftUI and Apple's platforms in general and will eventually lead to employment. 
+The hope is that I can share this link and it will demonstrate my understanding of programming and will eventually lead to employment. 
 
-### Why SwiftUI?
+### What languages/technologies am I familiar with? 
 
-When I made the decision to learn Swift and SwiftUI I knew that it would probably take time before I could get a job, because large codebases for existing iOS apps would be using AppKit and possibly even Objective-C. This would mean I would be a mostly-useless addition to these projects.
+In university, I was introduced to: 
 
-SwiftUI is also still not a finished product, and even with the release of SwiftUI 2 in iOS 14 that brings it much further along, it is still a step behind the much-more mature AppKit.
+* Java and JavaFX
+* HTML5 / CSS 3 / PHP (w/ Bootstrap)
+* MySQL
 
-However, SwiftUI is the future and unifies app development across all of Apple's platforms. While it may not help me much right now, at some point in the future all new projects targeting Apple's platforms will be using SwiftUI.
+Since graduating I have been studying: 
+
+* Swift 
+* SwiftUI
+* RealityKit (AR)
+* SpriteKit
+* Vapor (Server-side Swift)
+* Python (for some job interviews)
+
+### What do I love working on?
+
+Since I'm a Mac and iPhone user and the iOS market is very large, I decided to self-study Swift and SwiftUI, and try to get a position as an iOS developer. I knew that it would probably take time before I could get a job, because large codebases for existing iOS apps would be using AppKit and possibly even Objective-C. This would mean I wouldn't be able to bring much value to these projects right out of the gate.
+
+I found that I quite enjoy designing the UI for iOS apps, and find SwiftUI to be very simple yet powerful.
+
+SwiftUI is also still not a finished product, and even with the release of SwiftUI 2 in iOS 14 that brings it much further along, it is still a step behind the much-more mature AppKit. However, SwiftUI is the future and unifies app development across all of Apple's platforms. While it may not help me much right now, at some point in the future all new projects targeting Apple's platforms will be using SwiftUI.
 
 But if I can demonstrate an understanding of Swift and SwiftUI it shows I'm at least capable of learning AppKit (maybe even Obj-C!). Not to mention that using Xcode and the process of posting to the AppStore are the same regardless what language or APIs are used.
 
