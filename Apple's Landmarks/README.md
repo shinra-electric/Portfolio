@@ -15,11 +15,10 @@ It demonstrates:
 From Apple's <a href="https://developer.apple.com/tutorials/swiftui">Landmarks tutorial</a>.
 
 ## iOS 
-![](iOSLandmarks.mov)
+![](iOSLandmarks.mp4)
 
 ## macOS
-![](MacLandmarks.mov)
+![](MacLandmarks.mp4)
 
 ## watchOS
-![](watchOSLandmarks.mov)
-![](watchOSLandmarksNotification.mov)
+![](watchOSLandmarks.mp4)           ![](watchOSLandmarksNotification.mp4)
