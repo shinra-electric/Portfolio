@@ -8,7 +8,7 @@ SwiftUI got another significant update in WWDC '21, and these apps are to demons
 * Buttons can be given a .tint() with several new standard colours that work with both light and dark modes.
 * Toggles now have a new .button toggle style
 
-![](NewButtons.mp4)
+![](NewButtons.mov)
 
 
 

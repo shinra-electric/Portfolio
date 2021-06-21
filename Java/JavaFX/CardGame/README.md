@@ -11,7 +11,7 @@ For the assignment we were given screenshots of what the layout should look like
 * Added custom dark appearance using CSS
 * Added gif animation on win and custom about dialog
 
-![](HiLoAnimation.mp4)
+![](HiLoAnimation.mov)
 
 *Note: This app was created in an older version of Eclipse, and I was not able to get JavaFX running in Eclipse 2020-12. I intend to refactor to get it running in IntelliJ. 
 

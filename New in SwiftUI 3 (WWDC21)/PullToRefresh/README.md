@@ -16,6 +16,6 @@ Again, it is trivial to implement in SwiftUI.
 
 Also demonstrated in this app is the built-in support for Markdown in Text strings. I have provided the external link 
 
-![](PullToRefresh.mp4)
+![](PullToRefresh.mov)
 
 This app would not be very interesting at all without the genius of [HTTP Cats](https://http.cat).
