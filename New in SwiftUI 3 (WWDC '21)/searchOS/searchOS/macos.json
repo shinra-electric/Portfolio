@@ -1,0 +1,129 @@
+[
+    {
+  "codename": "Cheetah",
+  "version": "10.0",
+  "releaseDate": "2001",
+  "icon": "cheetah",
+  "background": "cheetah_background"
+    },
+    {
+  "codename": "Puma",
+  "version": "10.1",
+  "releaseDate": "2001",
+  "icon": "cheetah",
+  "background": "cheetah_background"
+    },
+    {
+  "codename": "Jaguar",
+  "version": "10.2",
+  "releaseDate": "2002",
+  "icon": "jaguar",
+  "background": "jaguar_background"
+    },
+        {
+  "codename": "Panther",
+  "version": "10.3",
+  "releaseDate": "2003",
+  "icon": "panther",
+  "background": "panther_background"
+    },
+        {
+  "codename": "Tiger",
+  "version": "10.4",
+  "releaseDate": "2005",
+  "icon": "tiger",
+  "background": "tiger_background"
+    },
+        {
+  "codename": "Leopard",
+  "version": "10.5",
+  "releaseDate": "2007",
+  "icon": "leopard",
+  "background": "leopard_background"
+    },
+        {
+  "codename": "Snow Leopard",
+  "version": "10.6",
+  "releaseDate": "2009",
+  "icon": "leopard",
+  "background": "snow_leopard_background"
+    },
+        {
+  "codename": "Lion",
+  "version": "10.7",
+  "releaseDate": "2011",
+  "icon": "lion",
+  "background": "lion_background"
+    },
+        {
+  "codename": "Mountain Lion",
+  "version": "10.8",
+  "releaseDate": "2011",
+  "icon": "mountain_lion",
+  "background": "mountain_lion_background"
+    },
+        {
+  "codename": "Mavericks",
+  "version": "10.9",
+  "releaseDate": "2013",
+  "icon": "mavericks",
+  "background": "mavericks_background"
+    },
+        {
+  "codename": "Yosemite",
+  "version": "10.10",
+  "releaseDate": "2014",
+  "icon": "yosemite",
+  "background": "yosemite_background"
+    },
+            {
+  "codename": "El Capitan",
+  "version": "10.11",
+  "releaseDate": "2015",
+  "icon": "el_capitan",
+  "background": "el_capitan_background"
+    },
+            {
+  "codename": "Sierra",
+  "version": "10.12",
+  "releaseDate": "2016",
+  "icon": "sierra",
+  "background": "sierra_background"
+    },
+            {
+  "codename": "High Sierra",
+  "version": "10.13",
+  "releaseDate": "2017",
+  "icon": "high_sierra",
+  "background": "high_sierra_background"
+    },
+            {
+  "codename": "Mojave",
+  "version": "10.14",
+  "releaseDate": "2018",
+  "icon": "mojave",
+  "background": "mojave_background"
+    },
+            {
+  "codename": "Catalina",
+  "version": "10.15",
+  "releaseDate": "2019",
+  "icon": "catalina",
+  "background": "catalina_background"
+    },
+            {
+  "codename": "Big Sur",
+  "version": "11",
+  "releaseDate": "2020",
+  "icon": "big_sur",
+  "background": "big_sur_background"
+    },
+            {
+  "codename": "Monterey",
+  "version": "12",
+  "releaseDate": "2021",
+  "icon": "monterey",
+  "background": "monterey_background"
+    }
+  ]
+

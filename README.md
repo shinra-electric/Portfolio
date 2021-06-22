@@ -41,9 +41,10 @@ Since I'm a Mac and iPhone user and the iOS market is very large, I decided to s
 
 I found that I quite enjoy designing the UI for iOS apps, and find SwiftUI to be very simple yet powerful.
 
-SwiftUI is also still not a finished product, and even with the release of SwiftUI 2 in iOS 14 that brings it much further along, it is still a step behind the much-more mature AppKit. However, SwiftUI is the future and unifies app development across all of Apple's platforms. While it may not help me much right now, at some point in the future all new projects targeting Apple's platforms will be using SwiftUI.
+SwiftUI is also still not a finished product. With the release of SwiftUI 3 in iOS 15 it has evolved significantly, and even some of Apple's own apps were developed exclusivly using SwiftUI (The Weather app on iOS and the Shortcuts app on macOS). There are still some features that are in UIKit that have not yet been implemented in SwiftUI, but SwiftUI is mature enough for most purposes. 
+SwiftUI is the future and unifies app development across all of Apple's platforms. While most companies large apps are likely still using UIKit/AppKit, most new projects targeting Apple's platforms will now be using SwiftUI.
 
-But if I can demonstrate an understanding of Swift and SwiftUI it shows I'm at least capable of learning AppKit (maybe even Obj-C!). Not to mention that using Xcode and the process of posting to the AppStore are the same regardless what language or APIs are used.
+But if I can demonstrate an understanding of Swift and SwiftUI it shows I'm at least capable of learning UIKit (maybe even Obj-C!). Not to mention that using Xcode and the process of posting to the AppStore are the same regardless what language or APIs are used.
 
 ### What tutorials have I been following? 
 
@@ -57,4 +58,5 @@ I've also learned from random places on the internet or YouTube, and I will try 
 
 ### Note: 
 
-SwiftUI 2 and XCode 12 were released recently, completely doing away with delegates. I am in the process of updating or re-implementing all the tutorials I have done in Xcode 12 along with a clear description of what was covered, and I will post them to GitHub when done. I'm not backporting any SwiftUI 2 features yet, though that is something I might do once everything is posted. 
+These apps were written over time using either SwiftUI 1, 2 or 3. As a result they might not contain the latest Swift or  SwiftUI features.
+
