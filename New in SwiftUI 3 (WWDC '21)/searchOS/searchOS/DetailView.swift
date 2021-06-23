@@ -9,7 +9,12 @@ import SwiftUI
 
 struct DetailView: View {
     @Environment(\.colorScheme) var colorScheme
+    @EnvironmentObject var modelData: ModelData
     let os: MacOSModel
+    
+    var osIndex: Int {
+        modelData.oses.firstIndex(where: { $0.id == os.id })!
+    }
     
     var body: some View {
         VStack {
@@ -20,10 +25,14 @@ struct DetailView: View {
             
             VStack(alignment: .center) {
                 VStack(spacing: 8) {
-                    Text("macOS \(os.version) ")
+                    Text("macOS \(os.id) ")
                         .font(.title)
-                    Text(os.codename)
-                        .font(.title2)
+                    HStack {
+                        Text(os.codename)
+                            .font(.title2)
+                        FavouriteButton(isSet: $modelData.oses[osIndex].isFavourite)
+                    }
+                    
                 }
                 
                 
@@ -37,13 +46,13 @@ struct DetailView: View {
                     HStack {
                         Text("Architecture:")
                         Spacer()
-                        Text(os.architecture)
+                        Text(os.architecture.rawValue)
                     }
                     Divider()
                     HStack {
                         Text("Applications:")
                         Spacer()
-                        Text(os.applications)
+                        Text(os.applications.rawValue)
                     }
                 }
                 .padding()

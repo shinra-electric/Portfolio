@@ -27,7 +27,7 @@ struct OSRow: View {
 
             Spacer()
             
-            if let favourite = os.isFavorite {
+            if let favourite = os.isFavourite {
                 if favourite {
                     Image(systemName: "star.fill")
                         .foregroundColor(.yellow)

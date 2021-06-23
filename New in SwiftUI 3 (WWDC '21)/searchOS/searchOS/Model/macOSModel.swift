@@ -7,28 +7,40 @@
 
 import Foundation
 
-struct MacOSModel: Codable, Hashable {
+struct MacOSModel: Codable, Hashable, Identifiable {
     var codename: String
-    var version: String
+    var id: String
     var releaseDate: String
     var icon: String
     var background: String
-    var architecture: String
-    var applications: String
-    var isFavorite: Bool? = false
+    var architecture: Architecture
+    var applications: Applications
+    var isFavourite: Bool = false
     
+    enum Architecture: String, CaseIterable, Codable {
+        case ppc = "PowerPC"
+        case ppcIntel = "PowerPC/Intel"
+        case intel = "Intel"
+        case intelArm = "Intel/ARM"
+        case arm = "ARM"
+    }
     
+    enum Applications: String, CaseIterable, Codable {
+        case thirtytwoBit = "32-bit"
+        case thirtyTwoAnd64Bit = "32-bit/64-bit"
+        case sixtyFourBit = "64-bit"
+    }
 }
 
 
 let example = MacOSModel(
     codename: "Monterey",
-    version: "12",
+    id: "12",
     releaseDate: "2021",
     icon: "monterey",
     background: "monterey_background",
-    architecture: "Intel/ARM",
-    applications: "64-bit",
-    isFavorite: true
+    architecture: MacOSModel.Architecture.intelArm,
+    applications: MacOSModel.Applications.sixtyFourBit,
+    isFavourite: true
     )
 
