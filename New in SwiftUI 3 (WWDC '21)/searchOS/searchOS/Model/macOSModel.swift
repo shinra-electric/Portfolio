@@ -13,6 +13,11 @@ struct MacOSModel: Codable, Hashable {
     var releaseDate: String
     var icon: String
     var background: String
+    var architecture: String
+    var applications: String
+    var isFavorite: Bool? = false
+    
+    
 }
 
 
@@ -21,6 +26,9 @@ let example = MacOSModel(
     version: "12",
     releaseDate: "2021",
     icon: "monterey",
-    background: "monterey_background"
+    background: "monterey_background",
+    architecture: "Intel/ARM",
+    applications: "64-bit",
+    isFavorite: true
     )
 

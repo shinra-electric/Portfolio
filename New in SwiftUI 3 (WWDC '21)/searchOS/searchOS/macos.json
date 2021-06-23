@@ -4,126 +4,162 @@
   "version": "10.0",
   "releaseDate": "2001",
   "icon": "cheetah",
-  "background": "cheetah_background"
+  "background": "cheetah_background",
+  "architecture": "PowerPC",
+  "applications": "32-bit"
     },
     {
   "codename": "Puma",
   "version": "10.1",
   "releaseDate": "2001",
   "icon": "cheetah",
-  "background": "cheetah_background"
+  "background": "cheetah_background",
+  "architecture": "PowerPC",
+  "applications": "32-bit"
     },
     {
   "codename": "Jaguar",
   "version": "10.2",
   "releaseDate": "2002",
   "icon": "jaguar",
-  "background": "jaguar_background"
+  "background": "jaguar_background",
+  "architecture": "PowerPC",
+  "applications": "32-bit"
     },
         {
   "codename": "Panther",
   "version": "10.3",
   "releaseDate": "2003",
   "icon": "panther",
-  "background": "panther_background"
+  "background": "panther_background",
+  "architecture": "PowerPC",
+  "applications": "32-bit"
     },
         {
   "codename": "Tiger",
   "version": "10.4",
   "releaseDate": "2005",
   "icon": "tiger",
-  "background": "tiger_background"
+  "background": "tiger_background",
+  "architecture": "PowerPC/Intel",
+  "applications": "32-bit"
     },
         {
   "codename": "Leopard",
   "version": "10.5",
   "releaseDate": "2007",
   "icon": "leopard",
-  "background": "leopard_background"
+  "background": "leopard_background",
+  "architecture": "PowerPC/Intel",
+  "applications": "32-bit/64-Bit"
     },
         {
   "codename": "Snow Leopard",
   "version": "10.6",
   "releaseDate": "2009",
   "icon": "leopard",
-  "background": "snow_leopard_background"
+  "background": "snow_leopard_background",
+  "architecture": "Intel",
+  "applications": "32-bit/64-Bit"
     },
         {
   "codename": "Lion",
   "version": "10.7",
   "releaseDate": "2011",
   "icon": "lion",
-  "background": "lion_background"
+  "background": "lion_background",
+  "architecture": "Intel",
+  "applications": "32-bit/64-Bit"
     },
         {
   "codename": "Mountain Lion",
   "version": "10.8",
   "releaseDate": "2011",
   "icon": "mountain_lion",
-  "background": "mountain_lion_background"
+  "background": "mountain_lion_background",
+  "architecture": "Intel",
+  "applications": "32-bit/64-Bit"
     },
         {
   "codename": "Mavericks",
   "version": "10.9",
   "releaseDate": "2013",
   "icon": "mavericks",
-  "background": "mavericks_background"
+  "background": "mavericks_background",
+  "architecture": "Intel",
+  "applications": "32-bit/64-Bit"
     },
         {
   "codename": "Yosemite",
   "version": "10.10",
   "releaseDate": "2014",
   "icon": "yosemite",
-  "background": "yosemite_background"
+  "background": "yosemite_background",
+  "architecture": "Intel",
+  "applications": "32-bit/64-Bit"
     },
             {
   "codename": "El Capitan",
   "version": "10.11",
   "releaseDate": "2015",
   "icon": "el_capitan",
-  "background": "el_capitan_background"
+  "background": "el_capitan_background",
+  "architecture": "Intel",
+  "applications": "32-bit/64-Bit"
     },
             {
   "codename": "Sierra",
   "version": "10.12",
   "releaseDate": "2016",
   "icon": "sierra",
-  "background": "sierra_background"
+  "background": "sierra_background",
+  "architecture": "Intel",
+  "applications": "32-bit/64-Bit"
     },
             {
   "codename": "High Sierra",
   "version": "10.13",
   "releaseDate": "2017",
   "icon": "high_sierra",
-  "background": "high_sierra_background"
+  "background": "high_sierra_background",
+  "architecture": "Intel",
+  "applications": "32-bit/64-Bit"
     },
             {
   "codename": "Mojave",
   "version": "10.14",
   "releaseDate": "2018",
   "icon": "mojave",
-  "background": "mojave_background"
+  "background": "mojave_background",
+  "architecture": "Intel",
+  "applications": "32-bit/64-Bit"
     },
             {
   "codename": "Catalina",
   "version": "10.15",
   "releaseDate": "2019",
   "icon": "catalina",
-  "background": "catalina_background"
+  "background": "catalina_background",
+  "architecture": "Intel",
+  "applications": "64-Bit"
     },
             {
   "codename": "Big Sur",
   "version": "11",
   "releaseDate": "2020",
   "icon": "big_sur",
-  "background": "big_sur_background"
+  "background": "big_sur_background",
+  "architecture": "Intel/ARM",
+  "applications": "64-Bit"
     },
             {
   "codename": "Monterey",
   "version": "12",
   "releaseDate": "2021",
   "icon": "monterey",
-  "background": "monterey_background"
+  "background": "monterey_background",
+  "architecture": "Intel/ARM",
+  "applications": "64-Bit"
     }
   ]
 

@@ -18,14 +18,40 @@ struct DetailView: View {
                 .aspectRatio(contentMode: .fit)
                 .frame(width: 200, height: 200)
             
-            VStack(spacing: 20) {
-                Text("macOS \(os.version) \(os.codename)")
-                Text("Released \(os.releaseDate)")
-                    .foregroundColor(.secondary)
+            VStack(alignment: .center) {
+                VStack(spacing: 8) {
+                    Text("macOS \(os.version) ")
+                        .font(.title)
+                    Text(os.codename)
+                        .font(.title2)
+                }
+                
+                
+                VStack(alignment: .leading) {
+                    HStack {
+                        Text("Released:")
+                        Spacer()
+                        Text(os.releaseDate)
+                    }
+                    Divider()
+                    HStack {
+                        Text("Architecture:")
+                        Spacer()
+                        Text(os.architecture)
+                    }
+                    Divider()
+                    HStack {
+                        Text("Applications:")
+                        Spacer()
+                        Text(os.applications)
+                    }
+                }
+                .padding()
+                .foregroundColor(.secondary)
             }
-            .frame(width: 230, height: 100)
+            .frame(width: 280, height: 230)
             .background(.ultraThinMaterial, in: RoundedRectangle(cornerRadius: 15))
-
+            .shadow(color: .black.opacity(0.3), radius: 10, x: 10, y: 10)
             
         }
         .background(Image(os.background))
@@ -35,6 +61,5 @@ struct DetailView: View {
 struct DetailView_Previews: PreviewProvider {
     static var previews: some View {
         DetailView(os: example)
-            .preferredColorScheme(.light)
     }
 }

@@ -1,44 +1,26 @@
 //
-//  ContentView.swift
+//  MainView.swift
 //  searchOS
 //
-//  Created by シェイミ on 22/06/2021.
+//  Created by シェイミ on 23/06/2021.
 //
 
 import SwiftUI
 
 struct ContentView: View {
-    @State private var searchText: String = ""
-        
-    let list = Bundle.main.decode([MacOSModel].self, from: "macos.json")
+    //    @State private var selection: Tab = .list
+    //
+    //    enum Tab { case featured, list }
     
     var body: some View {
-        NavigationView {
-            List {
-                ForEach(searchResults, id: \.self) { os in
-                    NavigationLink(destination: DetailView(os: os)) {
-                        Text(os.codename)
-                    }
-                    
-                }
-            }
-            .searchable(text: $searchText)
-            .navigationTitle("macOS Versions")
-        }
-        .accentColor(.primary)
-    }
-    
-    var searchResults: [MacOSModel] {
-        if searchText.isEmpty {
-            return list
-        } else {
-            return list.filter { $0.codename.range(of: searchText, options: .caseInsensitive) != nil }
-        }
+        ListView()
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+
+struct MainView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+            .environmentObject(ModelData())
     }
 }
