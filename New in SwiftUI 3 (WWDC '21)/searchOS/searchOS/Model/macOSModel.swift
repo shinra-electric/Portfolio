@@ -26,7 +26,7 @@ struct MacOSModel: Codable, Hashable, Identifiable {
     }
     
     enum Applications: String, CaseIterable, Codable {
-        case thirtytwoBit = "32-bit"
+        case thirtyTwoBit = "32-bit"
         case thirtyTwoAnd64Bit = "32-bit/64-bit"
         case sixtyFourBit = "64-bit"
     }
@@ -43,4 +43,5 @@ let example = MacOSModel(
     applications: MacOSModel.Applications.sixtyFourBit,
     isFavourite: true
     )
+
 

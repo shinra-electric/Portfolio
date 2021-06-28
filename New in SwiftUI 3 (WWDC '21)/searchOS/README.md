@@ -11,10 +11,19 @@ SwiftUI now has a native search view modifier which is extremely easy to impleme
 The material effect can be applied as a background, and will give that frosted-glass effect allowing colour in the background to bleed through to the foreground slightly. There are several opacities from .ultraThinMaterial to .ultraThickMaterial. It is now also simple to apply shapes such as rounded corners to the background.
 In addition to this, if foreground text is given the .secondary, .tertiary and .quaternary values, the text can now receive some of this colour bleed as well. 
 
+### Swipe actions
+
+Swipe actions can now be easily applied to lists, using standard buttons and labels. They can be set to either leading or trailing sides, and can be coloured. Can also restrict whether a full swipe is permitted. 
+I added in a swipe action to favourite an OS. There is no need for swipe to delete or any other functions for this app though. 
+(Note that the animations for the swipe are not very smooth on Xcode 12 Beta 2. Not sure if this is an Xcode/Simulator bug or if it is to do with my code structure...)
+
+### Bindable list elements
+
+This is not a UI feature, but I took advantage of passing in bound elements to the ForEach. Not only is it convenient, but there is a performance increase for doing this as the UI will not have to refresh the whole View if one element changes.  
+
 ### Bonus
 
 Although dark mode is not really a new feature, the background images and icons will change with the system setting from Mojave onwards. The material effect will also change, along with the accent color of the navigation. 
-
 
 
 ![](searchOS.mov)

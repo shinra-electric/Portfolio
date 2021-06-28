@@ -12,7 +12,7 @@ struct searchOSApp: App {
     @StateObject private var modelData = ModelData()
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ListView()
                 .environmentObject(modelData)
         }
     }

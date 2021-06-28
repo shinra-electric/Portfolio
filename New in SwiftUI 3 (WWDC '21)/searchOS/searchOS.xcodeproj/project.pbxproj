@@ -16,7 +16,6 @@
 		4CA68B492682102500E9DE03 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA68B452682102500E9DE03 /* Helper.swift */; };
 		4CA68B4A2682102500E9DE03 /* macos.json in Resources */ = {isa = PBXBuildFile; fileRef = 4CA68B462682102500E9DE03 /* macos.json */; };
 		4CA68B4B2682102500E9DE03 /* macOSModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA68B472682102500E9DE03 /* macOSModel.swift */; };
-		4CADB59A2683394100F9E72C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CADB5992683394100F9E72C /* ContentView.swift */; };
 		4CADB59C2683409400F9E72C /* OSRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CADB59B2683409400F9E72C /* OSRow.swift */; };
 		4CADB59E2683427D00F9E72C /* FavouriteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CADB59D2683427D00F9E72C /* FavouriteButton.swift */; };
 /* End PBXBuildFile section */
@@ -33,7 +32,6 @@
 		4CA68B462682102500E9DE03 /* macos.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = macos.json; sourceTree = "<group>"; };
 		4CA68B472682102500E9DE03 /* macOSModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = macOSModel.swift; sourceTree = "<group>"; };
 		4CA68B4C2682107D00E9DE03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		4CADB5992683394100F9E72C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		4CADB59B2683409400F9E72C /* OSRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OSRow.swift; sourceTree = "<group>"; };
 		4CADB59D2683427D00F9E72C /* FavouriteButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavouriteButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -86,15 +84,14 @@
 			children = (
 				4CA68B4C2682107D00E9DE03 /* Info.plist */,
 				4CA68B3626820FEB00E9DE03 /* searchOSApp.swift */,
-				4CADB5992683394100F9E72C /* ContentView.swift */,
 				4CA68B3826820FEB00E9DE03 /* ListView.swift */,
 				4CA68B442682102500E9DE03 /* DetailView.swift */,
 				4CADB59D2683427D00F9E72C /* FavouriteButton.swift */,
 				4CADB59B2683409400F9E72C /* OSRow.swift */,
 				4CA68B452682102500E9DE03 /* Helper.swift */,
 				4C6B1848268398A30085F358 /* ViewModel */,
-				4CA68B462682102500E9DE03 /* macos.json */,
 				4C6B1845268398780085F358 /* Model */,
+				4CA68B462682102500E9DE03 /* macos.json */,
 				4CA68B3A26820FF200E9DE03 /* Assets.xcassets */,
 				4CA68B3C26820FF200E9DE03 /* Preview Content */,
 			);
@@ -181,7 +178,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				4CA68B3926820FEB00E9DE03 /* ListView.swift in Sources */,
-				4CADB59A2683394100F9E72C /* ContentView.swift in Sources */,
 				4C6B18472683989E0085F358 /* ModelData.swift in Sources */,
 				4CA68B4B2682102500E9DE03 /* macOSModel.swift in Sources */,
 				4CADB59E2683427D00F9E72C /* FavouriteButton.swift in Sources */,

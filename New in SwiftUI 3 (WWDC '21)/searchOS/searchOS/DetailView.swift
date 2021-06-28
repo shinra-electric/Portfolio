@@ -8,10 +8,9 @@
 import SwiftUI
 
 struct DetailView: View {
-    @Environment(\.colorScheme) var colorScheme
     @EnvironmentObject var modelData: ModelData
-    let os: MacOSModel
     
+    var os: MacOSModel
     var osIndex: Int {
         modelData.oses.firstIndex(where: { $0.id == os.id })!
     }
