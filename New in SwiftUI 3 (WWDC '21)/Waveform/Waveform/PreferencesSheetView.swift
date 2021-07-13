@@ -8,38 +8,31 @@
 import SwiftUI
 
 struct PreferencesSheetView: View {
-    // Wave 1
-    @Binding var color1: Color
-    @Binding var amplification1: CGFloat
-    @Binding var isReversed1: Bool
-    
-    // Wave 2
-    @Binding var color2: Color
-    @Binding var amplification2: CGFloat
-    @Binding var isReversed2: Bool
-    
+    @Binding var wave1: Wave
+    @Binding var wave2: Wave
+
     var body: some View {
         VStack {
             List {
                 Section("First Wave") {
-                    ColorPicker("Change Colour", selection: $color1)
+                    ColorPicker("Change Colour", selection: $wave1.color)
                     HStack {
                         Text("Wave Height")
-                        Slider(value: $amplification1, in: 40...300)
+                        Slider(value: $wave1.amplification, in: 40...300)
                     }
-                    Toggle("Reverse Direction", isOn: $isReversed1)
+                    Toggle("Reverse Direction", isOn: $wave1.isReversed)
                 }
-                .tint(color1)
+                .tint(wave1.color)
                 
                 Section("Second Wave") {
-                    ColorPicker("Change Colour", selection: $color2)
+                    ColorPicker("Change Colour", selection: $wave2.color)
                     HStack {
                         Text("Wave Height")
-                        Slider(value: $amplification2, in: 40...300)
+                        Slider(value: $wave2.amplification, in: 40...300)
                     }
-                    Toggle("Reverse Direction", isOn: $isReversed2)
+                    Toggle("Reverse Direction", isOn: $wave2.isReversed)
                 }
-                .tint(color2)
+                .tint(wave2.color)
             }
             .labelStyle(.iconOnly)
             
@@ -49,7 +42,10 @@ struct PreferencesSheetView: View {
 }
 
 struct PreferencesSheetView_Previews: PreviewProvider {
+    @State static var wave1 = Wave(color: .teal, amplification: 150, isReversed: false, opacity: 0.7)
+    @State static var wave2 = Wave(color: .indigo, amplification: 150, isReversed: true, opacity: 0.4)
+    
     static var previews: some View {
-        PreferencesSheetView(color1: .constant(.indigo), amplification1: .constant(150), isReversed1: .constant(false), color2: .constant(.teal), amplification2: .constant(145), isReversed2: .constant(true))
+        PreferencesSheetView(wave1: Binding(projectedValue: $wave1), wave2: Binding(projectedValue: $wave2))
     }
 }

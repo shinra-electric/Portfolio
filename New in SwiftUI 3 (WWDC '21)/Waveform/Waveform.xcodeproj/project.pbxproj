@@ -13,6 +13,8 @@
 		4CA839ED2684CFE30013DD45 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA839EC2684CFE30013DD45 /* ContentView.swift */; };
 		4CA839EF2684CFEA0013DD45 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CA839EE2684CFEA0013DD45 /* Assets.xcassets */; };
 		4CA839F22684CFEA0013DD45 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CA839F12684CFEA0013DD45 /* Preview Assets.xcassets */; };
+		4CA9A637269DEE5D00532B3D /* HalfSheetViewHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA9A636269DEE5D00532B3D /* HalfSheetViewHelper.swift */; };
+		4CA9A639269DF20F00532B3D /* Wave.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA9A638269DF20F00532B3D /* Wave.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +25,8 @@
 		4CA839EC2684CFE30013DD45 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		4CA839EE2684CFEA0013DD45 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4CA839F12684CFEA0013DD45 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		4CA9A636269DEE5D00532B3D /* HalfSheetViewHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HalfSheetViewHelper.swift; sourceTree = "<group>"; };
+		4CA9A638269DF20F00532B3D /* Wave.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wave.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,8 +61,10 @@
 			children = (
 				4CA839EA2684CFE30013DD45 /* WaveformApp.swift */,
 				4CA839EC2684CFE30013DD45 /* ContentView.swift */,
-				4C8527922687382900953852 /* PreferencesSheetView.swift */,
+				4CA9A638269DF20F00532B3D /* Wave.swift */,
 				4C85279426873EB800953852 /* Waveform.swift */,
+				4C8527922687382900953852 /* PreferencesSheetView.swift */,
+				4CA9A636269DEE5D00532B3D /* HalfSheetViewHelper.swift */,
 				4CA839EE2684CFEA0013DD45 /* Assets.xcassets */,
 				4CA839F02684CFEA0013DD45 /* Preview Content */,
 			);
@@ -143,7 +149,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4CA9A639269DF20F00532B3D /* Wave.swift in Sources */,
 				4C85279526873EB800953852 /* Waveform.swift in Sources */,
+				4CA9A637269DEE5D00532B3D /* HalfSheetViewHelper.swift in Sources */,
 				4C8527932687382900953852 /* PreferencesSheetView.swift in Sources */,
 				4CA839ED2684CFE30013DD45 /* ContentView.swift in Sources */,
 				4CA839EB2684CFE30013DD45 /* WaveformApp.swift in Sources */,

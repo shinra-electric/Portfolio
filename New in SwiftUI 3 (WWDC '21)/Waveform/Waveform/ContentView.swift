@@ -11,20 +11,13 @@ import SwiftUI
 struct ContentView: View {
     @State private var showPreferencesSheet: Bool = false
     
-    // Wave 1
-    @State private var customColor1: Color = .teal
-    @State private var amplification1: CGFloat = 150
-    @State private var isReversed1: Bool = false
-    
-    // Wave 2
-    @State private var customColor2: Color = .indigo
-    @State private var amplification2: CGFloat = 150
-    @State private var isReversed2: Bool = true
+    @State private var wave1 = Wave(color: .teal, amplification: 150, isReversed: false, opacity: 0.7)
+    @State private var wave2 = Wave(color: .indigo, amplification: 150, isReversed: true, opacity: 0.4)
     
     var body: some View {
         ZStack {
-            Waveform(colour: customColor1.opacity(0.7), amplification: amplification1, isReversed: isReversed1)
-            Waveform(colour: customColor2.opacity(0.4), amplification: amplification2, isReversed: isReversed2)
+            Waveform(wave: wave1)
+            Waveform(wave: wave2)
             
             VStack {
                 HStack {
@@ -35,16 +28,9 @@ struct ContentView: View {
                         Image(systemName: "slider.horizontal.3")
                     })
                         .font(.title)
-                        .sheet(isPresented: $showPreferencesSheet) {
-                            PreferencesSheetView(
-                                color1: $customColor1,
-                                amplification1: $amplification1,
-                                isReversed1: $isReversed1,
-                                color2: $customColor2,
-                                amplification2: $amplification2,
-                                isReversed2: $isReversed2)
-                        }
-                        
+                        .halfSheet(showSheet: $showPreferencesSheet) {
+                            PreferencesSheetView(wave1: $wave1, wave2: $wave2)
+                        } onEnd: { } 
                 }
             }
             .padding()
@@ -53,6 +39,7 @@ struct ContentView: View {
         .ignoresSafeArea(.all, edges: .bottom)
     }
 }
+
 
 
 
