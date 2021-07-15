@@ -39,25 +39,61 @@ struct ForYou: View {
             .padding(.horizontal)
             // Setting maxHeight for offset calculation
             .frame(height: 70)
-
+            
             
             GeometryReader { proxy in
                 let size = proxy.size
                 
-                // Custom Carousel List
-                VerticalCarouselList {
-                    
-                    VStack(spacing: 0) {
-                        // Films
-                        ForEach(movies) { movie in
-                           // Card View
-                            // Re: topOffset: 70 = Title View, 15 = Spacing
-                            // Remaining is SafeArea top
-                            MovieCardView(movie: movie, topOffset: 70 + 15 + topEdge)
-                                .frame(height: size.height)
-                        }
-                    }
-                }
+                // Note: SwiftUI ScrollView does not yet support Pagination.
+                // In order to acheive the desired effect the following TabView has been rotated to simulate a vertical scrolling pagination effect.
+                // However I have had an issue with the opacity using this.
+                
+                // The original Kavsoft demo uses the custom VerticalCarouselList below created using UIKit.
+                // In order to switch, just comment out one an uncomment the other.
+                
+//                TabView {
+//                    // Films
+//                    ForEach(movies) { movie in
+//                        // Card View
+//                        // Re: topOffset: 70 = Title View, 15 = Spacing
+//                        // Remaining is SafeArea top
+//                        MovieCardView(movie: movie, topOffset: 70 + 15 + topEdge)
+//                            .frame(height: size.height)
+//                    }
+//                    .rotationEffect(.degrees(-90)) // Rotate content
+//                    .frame(
+//                        width: proxy.size.width,
+//                        height: proxy.size.height
+//                    )
+//                }
+//                .frame(
+//                    width: size.height, // Height & width swap
+//                    height: size.width
+//                )
+//                .rotationEffect(.degrees(90), anchor: .topLeading) // Rotate TabView
+//                .offset(x: size.width) // Offset back into screens bounds
+//                .tabViewStyle(
+//                    PageTabViewStyle(indexDisplayMode: .never)
+//                )
+                
+                
+                // Custom Carousel List (Required for Pagination)
+                                VerticalCarouselList {
+                
+                                    VStack(spacing: 0) {
+                                        // Films
+                                        ForEach(movies) { movie in
+                                           // Card View
+                                            // Re: topOffset: 70 = Title View, 15 = Spacing
+                                            // Remaining is SafeArea top
+                                            MovieCardView(movie: movie, topOffset: 70 + 15 + topEdge)
+                                                .frame(height: size.height)
+                                        }
+                                    }
+                                }
+                
+                
+                
                 
             }
         }
@@ -70,7 +106,7 @@ struct MovieCardView: View {
     var topOffset: CGFloat
     
     var body: some View {
-       // Use GeometryReader to get size of image
+        // Use GeometryReader to get size of image
         
         GeometryReader { proxy in
             let size = proxy.size
@@ -90,7 +126,7 @@ struct MovieCardView: View {
                     .resizable()
                     .aspectRatio(contentMode: .fill)
                     .frame(width: size.width - 30, height: size.height - 80)
-                .cornerRadius(15)
+                    .cornerRadius(15)
             }
             .padding(.horizontal, 15)
             .scaleEffect(minY < 0 ? scale : 1)

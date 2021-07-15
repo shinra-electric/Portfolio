@@ -9,8 +9,7 @@
 import SwiftUI
 
 // Custom View Builder.
-// This is required  because the native page tabview has an issue indexing the views in Xcode 13 Beta 2.
-// It shouldn't be required in later releases.
+// This is required because SwiftUI ScrollView currently does not have pagination. 
     
 struct VerticalCarouselList<Content: View>: UIViewRepresentable {
     var content: Content

@@ -4,7 +4,7 @@ This app just displays several film posters, using animation and scale effects t
 
 It demonstrates several new features in SwiftUI 3, and is from a demo by [Kavsoft](https://youtu.be/Wj_PJBWHWUc)
 
-* Note: When creating this there was a bug in Xcode 13 Beta 2 that affected SwiftUI TabViews, so this demo creates a custom TabView in UIKit.  It normally should not be necessary. 
+* Note: At the time I was creating this, SwiftUI ScrollView did not support pagination. The original Kavsoft demo uses a custom VerticalCarouselList, which I have included here. However I have also attempted to fix this by using TabView (which does support pagination) and rotate by 90 degrees. This pagination works as expected, but the Opacity does not. So I have left both versions in the code.
 
 ![](carousel.mov)
 

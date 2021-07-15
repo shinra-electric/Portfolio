@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4CA0EC55269E28D6005D33E0 /* Carousel1App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA0EC54269E28D6005D33E0 /* Carousel1App.swift */; };
+		4CA0EC55269E28D6005D33E0 /* CarouselApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA0EC54269E28D6005D33E0 /* CarouselApp.swift */; };
 		4CA0EC59269E28DC005D33E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CA0EC58269E28DC005D33E0 /* Assets.xcassets */; };
 		4CA0EC5C269E28DC005D33E0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CA0EC5B269E28DC005D33E0 /* Preview Assets.xcassets */; };
 		4CA0EC65269E2936005D33E0 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA0EC64269E2936005D33E0 /* Home.swift */; };
@@ -19,7 +19,7 @@
 
 /* Begin PBXFileReference section */
 		4CA0EC51269E28D6005D33E0 /* Carousel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Carousel.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		4CA0EC54269E28D6005D33E0 /* Carousel1App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Carousel1App.swift; sourceTree = "<group>"; };
+		4CA0EC54269E28D6005D33E0 /* CarouselApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselApp.swift; sourceTree = "<group>"; };
 		4CA0EC58269E28DC005D33E0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4CA0EC5B269E28DC005D33E0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		4CA0EC64269E2936005D33E0 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
@@ -63,7 +63,7 @@
 			children = (
 				4CA0EC63269E291A005D33E0 /* Model */,
 				4CA0EC62269E2910005D33E0 /* View */,
-				4CA0EC54269E28D6005D33E0 /* Carousel1App.swift */,
+				4CA0EC54269E28D6005D33E0 /* CarouselApp.swift */,
 				4CA0EC58269E28DC005D33E0 /* Assets.xcassets */,
 				4CA0EC5A269E28DC005D33E0 /* Preview Content */,
 			);
@@ -178,7 +178,7 @@
 				4CA0EC6E269E39E7005D33E0 /* Movie.swift in Sources */,
 				4CA0EC67269E2AD1005D33E0 /* CustomTabBar.swift in Sources */,
 				4CA0EC65269E2936005D33E0 /* Home.swift in Sources */,
-				4CA0EC55269E28D6005D33E0 /* Carousel1App.swift in Sources */,
+				4CA0EC55269E28D6005D33E0 /* CarouselApp.swift in Sources */,
 				4CA0EC6A269E32BD005D33E0 /* ForYou.swift in Sources */,
 				4CA0EC6C269E35DD005D33E0 /* VerticalCarouselList.swift in Sources */,
 			);
