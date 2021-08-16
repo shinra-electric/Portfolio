@@ -10,12 +10,12 @@ import Foundation
 struct MacOSModel: Codable, Hashable, Identifiable {
     var codename: String
     var id: String
+    var latestVersion: String
     var releaseDate: String
     var icon: String
     var background: String
     var architecture: Architecture
     var applications: Applications
-    var isFavourite: Bool = false
     
     enum Architecture: String, CaseIterable, Codable {
         case ppc = "PowerPC"
@@ -33,15 +33,16 @@ struct MacOSModel: Codable, Hashable, Identifiable {
 }
 
 
+// This example is for previews
 let example = MacOSModel(
     codename: "Monterey",
     id: "12",
+    latestVersion: "12.0 Beta 5",
     releaseDate: "2021",
     icon: "monterey",
     background: "monterey_background",
     architecture: MacOSModel.Architecture.intelArm,
-    applications: MacOSModel.Applications.sixtyFourBit,
-    isFavourite: true
+    applications: MacOSModel.Applications.sixtyFourBit
     )
 
 

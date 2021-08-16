@@ -8,7 +8,8 @@
 import SwiftUI
 
 struct OSRow: View {
-    var os: MacOSModel
+    let os: MacOSModel
+    let isFavorite: Bool
     
     var body: some View {
         HStack {
@@ -20,18 +21,16 @@ struct OSRow: View {
             VStack(alignment: .leading) {
                 Text(os.codename)
                     .bold()
-                Text(os.releaseDate)
+                Text(os.id)
                     .foregroundColor(.secondary)
                     .font(.subheadline)
             }
-
+            
             Spacer()
             
-            if let favourite = os.isFavourite {
-                if favourite {
-                    Image(systemName: "star.fill")
-                        .foregroundColor(.yellow)
-                }
+            if isFavorite {
+                Image(systemName: "star.fill")
+                    .foregroundColor(.yellow)
             }
         }
         .padding(.vertical, 4)
@@ -40,6 +39,6 @@ struct OSRow: View {
 
 struct OSRow_Previews: PreviewProvider {
     static var previews: some View {
-        OSRow(os: example)
+        OSRow(os: example, isFavorite: true)
     }
 }

@@ -10,9 +10,10 @@ import SwiftUI
 @main
 struct searchOSApp: App {
     @StateObject private var modelData = ModelData()
+    
     var body: some Scene {
         WindowGroup {
-            ListView()
+            ContentView()
                 .environmentObject(modelData)
         }
     }

@@ -15,11 +15,6 @@ In addition to this, if foreground text is given the .secondary, .tertiary and .
 
 Swipe actions can now be easily applied to lists, using standard buttons and labels. They can be set to either leading or trailing sides, and can be coloured. Can also restrict whether a full swipe is permitted. 
 I added in a swipe action to favourite an OS. There is no need for swipe to delete or any other functions for this app though. 
-(Note that the animations for the swipe are not very smooth on Xcode 12 Beta 2. Not sure if this is an Xcode/Simulator bug or if it is to do with my code structure...)
-
-### Bindable list elements
-
-This is not a UI feature, but I took advantage of passing in bound elements to the ForEach. Not only is it convenient, but there is a performance increase for doing this as the UI will not have to refresh the whole View if one element changes.  
 
 ### Bonus
 
@@ -27,8 +22,6 @@ Although dark mode is not really a new feature, the background images and icons 
 
 
 ![](searchOS.mov)
-
-
 
 
 

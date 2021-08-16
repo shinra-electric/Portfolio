@@ -6,11 +6,10 @@
 //
 
 import Foundation
-import Combine
 
 final class ModelData: ObservableObject {
     @Published var oses: [MacOSModel] = Bundle.main.decode([MacOSModel].self, from: "macos.json")
-    
+    @Published var favorites = Set<MacOSModel>()
     
     // MARK: Search
     @Published var searchText: String = ""
@@ -18,13 +17,22 @@ final class ModelData: ObservableObject {
     var searchResults: [MacOSModel] {
         get {
             if searchText.isEmpty {
-               return filteredOS
+                return filteredOS
             } else {
-               return filteredOS.filter { $0.codename.range(of: searchText, options: .caseInsensitive) != nil }
+                return filteredOS.filter { $0.codename.range(of: searchText, options: .caseInsensitive) != nil }
             }
         }
         // Computed properties need to have a Set value, or else can't be passed into a ForEach loop
         set {  }
+    }
+    
+
+    func toggle(favorite os: MacOSModel) {
+        if favorites.contains(os) {
+            favorites.remove(os)
+        } else {
+            favorites.insert(os)
+        }
     }
     
     
@@ -47,7 +55,7 @@ final class ModelData: ObservableObject {
     var filteredOS: [MacOSModel] {
         oses.filter { os in
             (!showFavoritesOnly
-             || os.isFavourite) &&
+             || favorites.contains(os)) &&
             (filter == .all
              || os.architecture.rawValue.contains(filter.rawValue)
              || os.applications.rawValue.contains(filter.rawValue)
