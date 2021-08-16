@@ -6,7 +6,7 @@ This was my third time in university, and I have previously had a successful car
 
 After a lengthy career in IPMI, I had decided to go back to university in order to pursue a new career doing something I was actually excited about.
 
-Even though the CS course I did was very useful, it did not touch app development at all, and I only created small apps using Java and JavaFX. Therefore since graduation I have been learning Swift and decided to start learning SwiftUI. 
+Even though the CS course I did was very useful, it did not touch mobile app development at all. The apps we created were small CLI apps with a few desktop apps using Java and JavaFX. Therefore since graduation I have been learning Swift and SwiftUI. 
 
 ### What's the point of this repository? 
 
@@ -37,18 +37,26 @@ Since graduating I have been studying:
 
 ### What do I love working on?
 
-Since I'm a Mac and iPhone user and the iOS market is very large, I decided to self-study Swift and SwiftUI, and try to get a position as an iOS developer. I knew that it would probably take time before I could get a job, because large codebases for existing iOS apps would be using AppKit and possibly even Objective-C. This would mean I wouldn't be able to bring much value to these projects right out of the gate.
+Since I'm a Mac and iPhone user and the iOS market is very large, I decided to self-study Swift and SwiftUI, and try to get a position as an iOS developer. I knew that it would probably take time before I could get a job, because large codebases for existing iOS apps would be using AppKit and possibly even Objective-C. This would mean I wouldn't be able to bring a lot of value to these projects right out of the gate.
 
-I found that I quite enjoy designing the UI for iOS apps, and find SwiftUI to be very simple yet powerful.
+I found that I quite enjoy designing the UI for iOS apps, and find SwiftUI to be very simple, yet powerful.
 
-SwiftUI is also still not a finished product. With the release of SwiftUI 3 in iOS 15 it has evolved significantly, and even some of Apple's own apps were developed exclusivly using SwiftUI (The Weather app on iOS and the Shortcuts app on macOS). There are still some features that are in UIKit that have not yet been implemented in SwiftUI, but SwiftUI is mature enough for most purposes. 
-SwiftUI is the future and unifies app development across all of Apple's platforms. While most companies large apps are likely still using UIKit/AppKit, most new projects targeting Apple's platforms will now be using SwiftUI.
+With the release of SwiftUI 3 in iOS 15, SwiftUI has evolved significantly, and even some of Apple's own apps were developed exclusivly using SwiftUI (e.g. the Weather app on iOS 15 and the Shortcuts app on macOS 12). There are still some features that are in UIKit that have not yet been implemented in SwiftUI, but SwiftUI is mature enough for most purposes. It's also possible to still use UIKit within a SwiftUI project, so it's not an issue. 
+SwiftUI is the future and unifies app development across all of Apple's platforms. While most companies' large apps are likely still using UIKit/AppKit, most new projects targeting Apple's platforms should now be using SwiftUI.
 
-But if I can demonstrate an understanding of Swift and SwiftUI it shows I'm at least capable of learning UIKit (maybe even Obj-C!). Not to mention that using Xcode and the process of posting to the AppStore are the same regardless what language or APIs are used.
+While I currently do not have much experience with AppKit/UIKit/Obj-C, I'm sure that I'd be able to learn them fairly quickly should it be required. 
 
 ### What tutorials have I been following? 
 
 I started with Paul Hudson's <a href="https://www.hackingwithswift.com">Hacking With Swift</a> course, which is an excellent free online course, and I recommend to everyone who is interested in coding. 
+
+Meng To does fantastic design tutorials at [DesignCode](https://www.youtube.com/channel/UCTIhfOopxukTIRkbXJ3kN-g)
+
+[Kavsoft](https://kavsoft.dev) also have some great [tutorials](https://www.youtube.com/channel/UCsuV4MRk_aB291SrchUVb4w) on Youtube. 
+
+I've recently discovered [CodeSlicing](https://www.youtube.com/channel/UCakreohbcr3Xcrlc6qbbbVA) who have excellent animation tutorials. 
+
+[Reality School](https://www.youtube.com/channel/UCTtCkXsHQvuOYjjpPMleQWQ) have some good AR and VR tutorials. 
 
 While researching solutions to various problems I encountered, I also came across <a href="https://www.youtube.com/user/azamsharp/">Azam Sharp's YouTube Channel</a>, which I found quite useful. 
 
@@ -59,4 +67,3 @@ I've also learned from random places on the internet or YouTube, and I will try 
 ### Note: 
 
 These apps were written over time using either SwiftUI 1, 2 or 3. As a result they might not contain the latest Swift or  SwiftUI features.
-
