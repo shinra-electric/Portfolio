@@ -8,6 +8,7 @@ It is mostly made using SwiftUI.
 
 ![](AnimatedPagingIndicator.mov)
 
-Demo by [Kavsoft](https://youtu.be/cY-Feaqkbng)
+Demo by [Kavsoft](https://youtu.be/cY-Feaqkbng). 
+
 Images from some free png download site (I can't remember which one...)
 
